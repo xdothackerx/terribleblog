@@ -1,7 +1,13 @@
 <h1>Ivan the Terrible's Blog</h1>
-
 <section class="blog">
-  <%= render @posts %>
+  <%= render @posts.sample %>
+</section>
+
+<section class="index">
+  Popular Posts:
+  <% @posts.each do |post| %>
+    <h3><%= link_to post.title, post %></h3>
+  <% end %>
 </section>
 
 <br />
