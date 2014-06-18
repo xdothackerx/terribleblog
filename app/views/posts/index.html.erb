@@ -1,6 +1,7 @@
 <h1>Ivan the Terrible's Blog</h1>
 <section class="blog">
-  <%= render @posts %>
+  <% post = @posts.sample %>
+  <%= render post %>
 </section>
 <br /><br />
 <section class="index">
