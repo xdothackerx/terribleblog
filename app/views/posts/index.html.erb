@@ -1,12 +1,12 @@
 <h1>Ivan the Terrible's Blog</h1>
 <section class="blog">
-  <%= render @posts %>
+  <%= render @posts.sample %>
 </section>
 <br /><br />
 <section class="index">
   <h3>More Posts:</h3>
   <% @posts.each do |post| %>
-    <%= link_to post.title, post %><br>
+    <%= link_to post.title, post, id:"#{post.id}_link", remote: true %><br>
   <% end %>
 </section>
 
