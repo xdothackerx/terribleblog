@@ -13,6 +13,10 @@ gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 gem 'will_paginate'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
