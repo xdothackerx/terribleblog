@@ -12,6 +12,7 @@ gem 'rails-observers'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 gem 'will_paginate'
+gem 'newrelic_rpm'
 gem 'puma'
 
 group :production do
