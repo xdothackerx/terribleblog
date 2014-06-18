@@ -12,10 +12,10 @@ gem 'rails-observers'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 gem 'will_paginate'
+gem 'puma'
 
 group :production do
   gem 'rails_12factor'
-  gem 'unicorn'
 end
 
 group :development, :test do
