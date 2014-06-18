@@ -15,6 +15,7 @@ gem 'will_paginate'
 
 group :production do
   gem 'rails_12factor'
+  gem 'unicorn'
 end
 
 group :development, :test do
@@ -41,7 +42,6 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
