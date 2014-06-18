@@ -143,6 +143,7 @@ GEM
     uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    will_paginate (3.0.5)
     yard (0.8.7.4)
 
 PLATFORMS
@@ -167,3 +168,4 @@ DEPENDENCIES
   sass-rails
   test-unit
   uglifier (>= 1.0.3)
+  will_paginate

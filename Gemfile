@@ -11,6 +11,7 @@ gem 'faker'
 gem 'rails-observers'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
+gem 'will_paginate'
 
 group :development, :test do
   gem 'rspec-rails'

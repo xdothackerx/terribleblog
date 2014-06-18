@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.all
+    @comments = Comment.all.includes(:replies)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
   # GET /comments/1
   # GET /comments/1.json
   def show
-    @comment = Comment.find(params[:id])
+    @comment = Comment.find(params[:id]).includes(:replies)
 
     respond_to do |format|
       format.html # show.html.erb

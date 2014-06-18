@@ -2,14 +2,14 @@
 <section class="blog">
   <%= render @posts.sample %>
 </section>
-
+<br /><br />
 <section class="index">
-  Popular Posts:
+  <h3>More Posts:</h3>
   <% @posts.each do |post| %>
-    <h3><%= link_to post.title, post %></h3>
+    <%= link_to post.title, post %><br>
   <% end %>
 </section>
 
-<br />
+
 
 <%= link_to 'New Post', new_post_path %>
